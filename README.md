@@ -45,8 +45,9 @@ módulos disponíveis.
 
 ```bash
 # Agora você pode instalar os módulos mais necessários, basta trocar a versão pela do PHP ou das versões que você quer instalar
-sudo apt install openssl php*.*-curl php*.*-gd php*.*-json php*.*-mbstring php*.*-mcrypt php*.*-common php*.*-bcmath 
-php*.*-xml php*.*-zip php*.*-mysql php*.*-intl php*.*-mongodb php*.*-gmp
+sudo apt install openssl php*.*-curl php*.*-gd php*.*-imagick php*.*-json php*.*-mbstring php*.*-mcrypt php*.*-common php*.*-bcmath
+
+sudo apt install php*.*-xml php*.*-zip php*.*-mysql php*.*-intl php*.*-mongodb php*.*-gmp php*.*-soap
 ```
 
 Para acessar a lista de extensões disponíveis: [https://packages.ubuntu.com/focal/php/](https://packages.ubuntu.com/focal/php/)
@@ -198,3 +199,51 @@ Agora é a hora de atualizar o seu repositório Fork, executando o comando:
 git push origin master
 ```
 
+## NodeJS
+
+### Atualizar para versão 14
+
+```bash
+sudo apt-get update
+
+# Adiciona repositorio
+curl -sL https://deb.nodesource.com/setup_14.x | sudo bash -
+
+# Faz a instalação
+sudo apt install -y nodejs
+
+node -v
+# ~v.14.17.5
+```
+
+## Valet
+
+### Ativar SSL
+```bash
+# Acesse o diretorio do projeto e rode:
+valet secure
+
+# Para verificar se foi ativado:
+valet links
+#+---------------+-----+----------------------------+----------------------------------+
+#| Site          | SSL | URL                        | Path                             |
+#+---------------+-----+----------------------------+----------------------------------+
+#| compras.braip |  X  | https://compras.braip.test | /home/carlos/Braip/compras.braip |
+#| dev.braip     |  X  | https://dev.braip.test     | /home/carlos/Braip/dev.braip     |
+#+---------------+-----+----------------------------+----------------------------------+
+```
+
+#### Google Chrome
+```bash
+# Acesse o gerenciador de certificados
+Settings -> Security -> Manager Certifcate -> Authorities -> Import LaravelValetCASelfSigned
+
+Configurações -> Segurança -> Gerenciar Certificados -> Autoridades -> Importar LaravelValetCASelfSigned
+
+# LaravelValetCASelfSigned é um lugar no seu $HOME/.valet/CA
+# Então, se você estiver no Chrome, basta habilitar este parâmetro, acesse:
+chrome://flags/#allow-insecure-localhost
+
+# Se você não estiver no Chrome, deve ter um parâmetro como este para encontrar
+allow-insecure-localhost
+```
