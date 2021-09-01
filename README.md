@@ -250,3 +250,10 @@ chrome://flags/#allow-insecure-localhost
 # Se você não estiver no Chrome, deve ter um parâmetro como este para encontrar
 allow-insecure-localhost
 ```
+## Fonte (Cascadia Code)
+```bash
+sudo apt-get update
+
+# Instala
+sudo apt-get install fonts-cascadia-code
+```
