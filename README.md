@@ -201,6 +201,9 @@ git push origin master
 
 ## NodeJS
 
+### Instalar versão 14
+https://github.com/nodesource/distributions/blob/master/README.md
+
 ### Atualizar para versão 14
 
 ```bash
