@@ -66,6 +66,9 @@ Ferramenta de gerenciamento de banco de dados mongodb
 Download
 [https://www.mongodb.com/try/download/compass](https://www.mongodb.com/try/download/compass)
 
+## Redis
+[https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04-pt](https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-redis-on-ubuntu-20-04-pt)
+
 ## Github
 Debian/Ubuntu
 É uma boa ideia verificar se você está executando a versão mais recente. Para fazer isso, navegue até a linha de comandos 
