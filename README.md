@@ -153,8 +153,8 @@ git add -A
 git commit -m "Mensagem do commit"
 
 # Enviar solicitação
-# git push --set-upstream origin name-branch
-git push origin name-branch
+git push --set-upstream origin name-branch
+# git push origin name-branch
 ```
 
 Caso seja solicitado para juntar os commits
