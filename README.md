@@ -55,6 +55,9 @@ Para acessar a lista de extensões disponíveis: [https://packages.ubuntu.com/fo
 ## Instalação CS-FIXER
 [https://cs.symfony.com/](https://cs.symfony.com/)
 
+## Instalação e configuração do MySQL
+[https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-pt](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-pt)
+
 ## Instalação MongoDB
 Download
 [https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
