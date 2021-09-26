@@ -272,3 +272,6 @@ sudo apt-get update
 # Instala
 sudo apt-get install fonts-cascadia-code
 ```
+
+## Instalação e configuração do MailHog
+[https://github.com/mailhog/MailHog](https://github.com/mailhog/MailHog)
