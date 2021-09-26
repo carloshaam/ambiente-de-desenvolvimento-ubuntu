@@ -210,8 +210,11 @@ git push origin master
 
 ## NodeJS
 
+### Instalar qualquer versão do nodejs + npm
+[https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt)
+
 ### Instalar versão 14
-https://github.com/nodesource/distributions/blob/master/README.md
+[https://github.com/nodesource/distributions/blob/master/README.md](https://github.com/nodesource/distributions/blob/master/README.md)
 
 ### Atualizar para versão 14
 
