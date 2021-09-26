@@ -52,7 +52,7 @@ sudo apt install php*.*-xml php*.*-zip php*.*-mysql php*.*-intl php*.*-mongodb p
 
 Para acessar a lista de extensões disponíveis: [https://packages.ubuntu.com/focal/php/](https://packages.ubuntu.com/focal/php/)
 
-### Inbstalação CS-FIXER
+## Instalação CS-FIXER
 [https://cs.symfony.com/](https://cs.symfony.com/)
 
 ## Instalação MongoDB
@@ -224,6 +224,9 @@ sudo apt install -y nodejs
 node -v
 # ~v.14.17.5
 ```
+
+### Extensões
+```bash sudo apt install -y build-essential gcc make libpng-dev```
 
 ## Valet
 
