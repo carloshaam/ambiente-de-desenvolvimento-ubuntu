@@ -52,6 +52,9 @@ sudo apt install php*.*-xml php*.*-zip php*.*-mysql php*.*-intl php*.*-mongodb p
 
 Para acessar a lista de extensões disponíveis: [https://packages.ubuntu.com/focal/php/](https://packages.ubuntu.com/focal/php/)
 
+### Inbstalação CS-FIXER
+[https://cs.symfony.com/](https://cs.symfony.com/)
+
 ## Instalação MongoDB
 Download
 [https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
