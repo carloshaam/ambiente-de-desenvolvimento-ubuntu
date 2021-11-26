@@ -123,7 +123,7 @@ sudo apt install gh
 git remote -v
 
 # Adicione o repositório original com o nome de upstream
-git remote add upstream git@github.com:braiphub/braip.git
+git remote add upstream URL/SSH do repositório
 
 # Liste novamente os remotes para ver se está correto
 git remote -v
