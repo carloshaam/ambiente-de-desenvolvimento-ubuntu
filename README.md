@@ -141,13 +141,16 @@ git merge upstream/master
 ## Git — Fluxo
 ```bash
 # Baixe os commits do repositório original, eles serão armazenados em uma branch local upstream/master
-git fetch upstream
+git fetch upstream master
 
 # Mude para a branch master
 git checkout master
 
 # Faça o merge das alterações do upstream/master no seu local master branch. Isso irá sincronizar as alterações do repositório original com o seu fork sem perder as alterações
 git merge upstream/master
+
+# Sincronizar repositório
+git pull upstream master
 
 # Cria uma nova branch
 git checkout -b name-branch
@@ -207,6 +210,28 @@ Agora é a hora de atualizar o seu repositório Fork, executando o comando:
 ```bash
 git push origin master
 ```
+
+### Reverter um merge
+Assumindo que o merge não gerou nenhum commit (já que há conflitos). Na raiz do seu repositório, digite
+```bash
+git reset
+```
+
+Isso irá remover todas as mudanças que estão staged, colocando-as de volta na lista de modified.
+
+Em seguida, reverta todas as modificações
+```bash
+git reset HEAD --hard
+```
+
+Isso irá reverter todas as modificações nos arquivos modificados. Note que se você tinha alguma outra modificação, ela também será perdida.
+Se o merge adicionou arquivos novos no repositório, então você pode "limpá-los" através do `git clean`. Novamente da raiz do repositório
+```bash
+git clean -xdf
+```
+
+**Observação**
+Como sempre, cuidado quando usar o git clean já que ele pode apagar arquivos que você gostaria de ter. Você pode usar a opção n em vez de f para listar os arquivos que serão apagados.
 
 ## NodeJS
 
