@@ -234,6 +234,23 @@ node -v
 ### Extensões
 ```bash sudo apt install -y build-essential gcc make libpng-dev```
 
+## NPM
+
+### Instalação
+```bash
+sudo apt install npm
+```
+
+### Verificar versão
+```bash
+npm -v
+```
+
+### Atualizar
+```bash
+npm install -g npm@latest
+```
+
 ## Valet
 
 ### Ativar SSL
