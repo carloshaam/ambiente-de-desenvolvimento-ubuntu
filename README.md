@@ -230,6 +230,11 @@ Se o merge adicionou arquivos novos no repositório, então você pode "limpá-l
 git clean -xdf
 ```
 
+## Comandos úteis!
+```bash
+git commit -m "Nova mensagem que vai substituir a anterior" --amend
+```
+
 **Observação**
 Como sempre, cuidado quando usar o git clean já que ele pode apagar arquivos que você gostaria de ter. Você pode usar a opção n em vez de f para listar os arquivos que serão apagados.
 
