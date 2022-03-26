@@ -52,6 +52,17 @@ sudo apt install php*.*-xml php*.*-zip php*.*-mysql php*.*-intl php*.*-mongodb p
 
 Para acessar a lista de extensões disponíveis: [https://packages.ubuntu.com/focal/php/](https://packages.ubuntu.com/focal/php/)
 
+Para trabalhar com envio de arquivo para o verbo PUT HTTP:
+
+```bash
+sudo apt install php-pear 
+
+sudo apt install php*.*-dev
+
+sudo pecl install apfd
+```
+[APFD](https://mdref.m6w6.name/apfd)
+
 ## Instalação CS-FIXER
 [https://cs.symfony.com/](https://cs.symfony.com/)
 
