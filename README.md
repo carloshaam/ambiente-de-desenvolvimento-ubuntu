@@ -1,7 +1,4 @@
-## Instalação do Valet
-Acesse: [https://cpriego.github.io/valet-linux/faq.html](https://cpriego.github.io/valet-linux/faq.html)
-
-## Instalação PHP
+## PHP
 ```bash
 # O primeiro passo para instalar diferentes versões do PHP é adicionar o PPA mantido por Ondrej Surý no Ubuntu
 sudo add-apt-repository ppa:ondrej/php
@@ -50,9 +47,11 @@ sudo apt install openssl php*.*-curl php*.*-gd php*.*-imagick php*.*-json php*.*
 sudo apt install php*.*-xml php*.*-zip php*.*-mysql php*.*-intl php*.*-mongodb php*.*-gmp php*.*-soap
 ```
 
-Para acessar a lista de extensões disponíveis: [https://packages.ubuntu.com/focal/php/](https://packages.ubuntu.com/focal/php/)
+Para acessar a lista de extensões disponíveis: [Link](https://packages.ubuntu.com/focal/php/)
 
 Para trabalhar com envio de arquivo para o verbo PUT HTTP:
+
+[APFD](https://mdref.m6w6.name/apfd)
 
 ```bash
 sudo apt install php-pear 
@@ -61,15 +60,14 @@ sudo apt install php*.*-dev
 
 sudo pecl install apfd
 ```
-[APFD](https://mdref.m6w6.name/apfd)
 
-## Instalação CS-FIXER
+## CS-FIXER
 [https://cs.symfony.com/](https://cs.symfony.com/)
 
-## Instalação e configuração do MySQL
+## MySQL
 [https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-pt](https://www.digitalocean.com/community/tutorials/how-to-install-mysql-on-ubuntu-20-04-pt)
 
-## Instalação MongoDB
+## MongoDB
 Download
 [https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/)
 
@@ -243,13 +241,19 @@ git clean -xdf
 
 ## Comandos úteis!
 ```bash
+#Para corrigir a mensagem de um commit usamos o comando:
 git commit -m "Nova mensagem que vai substituir a anterior" --amend
+```
+
+```bash
+#O git cherry pick é um comando poderoso do Git que permite ao usuário selecionar commits específicos para trazer ao branch desejado.
+git cherry-pick ID_DO_COMMIT
 ```
 
 **Observação**
 Como sempre, cuidado quando usar o git clean já que ele pode apagar arquivos que você gostaria de ter. Você pode usar a opção n em vez de f para listar os arquivos que serão apagados.
 
-## NodeJS
+## Node
 
 ### Instalar qualquer versão do nodejs + npm
 [https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt](https://www.digitalocean.com/community/tutorials/how-to-install-node-js-on-ubuntu-20-04-pt)
@@ -272,7 +276,7 @@ node -v
 # ~v.14.17.5
 ```
 
-### Extensões
+### Extensões que você possa precisar instalar
 ```bash sudo apt install -y build-essential gcc make libpng-dev```
 
 ## NPM
@@ -292,7 +296,10 @@ npm -v
 npm install -g npm@latest
 ```
 
-## Valet
+## Valet (Linux)
+
+### Instalação do Valet
+Acesse: [https://cpriego.github.io/valet-linux/faq.html](https://cpriego.github.io/valet-linux/faq.html)
 
 ### Ativar SSL
 ```bash
@@ -301,6 +308,7 @@ valet secure
 
 # Para verificar se foi ativado:
 valet links
+
 #+---------------+-----+--------------------+--------------------------+
 #| Site          | SSL | URL                    | Path                 |
 #+---------------+-----+--------------------+--------------------------+
@@ -308,7 +316,7 @@ valet links
 #+---------------+-----+--------------------+--------------------------+
 ```
 
-#### Google Chrome
+### Importar Certificado Google Chrome
 ```bash
 # Acesse o gerenciador de certificados
 Settings -> Security -> Manager Certifcate -> Authorities -> Import LaravelValetCASelfSigned
@@ -322,13 +330,8 @@ chrome://flags/#allow-insecure-localhost
 # Se você não estiver no Chrome, deve ter um parâmetro como este para encontrar
 allow-insecure-localhost
 ```
-## Fonte (Cascadia Code)
-```bash
-sudo apt-get update
 
-# Instala
-sudo apt-get install fonts-cascadia-code
-```
+## MailHog
 
-## Instalação e configuração do MailHog
+### Instalação e configuração do MailHog
 [https://github.com/mailhog/MailHog](https://github.com/mailhog/MailHog)
