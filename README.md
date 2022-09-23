@@ -335,3 +335,8 @@ allow-insecure-localhost
 
 ### Instalação e configuração do MailHog
 [https://github.com/mailhog/MailHog](https://github.com/mailhog/MailHog)
+
+## MailDev
+
+### Instalação e configuração do MailDev
+[https://github.com/maildev/maildev](https://github.com/maildev/maildev)
